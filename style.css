@@ -199,12 +199,14 @@ nav{
 }
 .welcome_span1{
 	font-size: 4em;
-	animation: leftSideToCenter 1s linear;
+	animation: leftSideToCenter 1s 0.5s linear;
+	animation-fill-mode: backwards;
 }
 .welcome_span2{   
 	font-family: 'Dancing Script', cursive;
 	font-size: 3em;
-	animation: rightSideToCenter 1s linear;
+	animation: rightSideToCenter 1s 0.5s linear;
+	animation-fill-mode: backwards;
 } 
 .w_container .welcome_span1{
 	margin-right: 0;
