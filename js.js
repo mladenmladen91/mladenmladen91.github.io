@@ -52,7 +52,7 @@ $(document).ready(function(){
         var source = $(this).text().toLowerCase();
 		var target = $('#'+source).offset().top;
 		$("#nav2").slideUp(500);
-		$("#hamburger").removeClass("trans");
+		$("#hamburger").removeClass("transX");
 		$('html,body').animate({
 			scrollTop: target
 		},800,'linear');
