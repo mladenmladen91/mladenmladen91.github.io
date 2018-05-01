@@ -137,17 +137,52 @@ nav{
         -webkit- border-radius: 3px;
         -o- border-radius: 3px;
         display: none;
+       position: relative;
 
 
 }
-.ham1, .ham2, .ham3{
+
+.ham2{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%, -50%);
+}
+.ham2, .ham2::after, .ham2::before{
 	width:20px;
 	height:3px;
 	background: white;
-	margin: 6px auto;
-	display: block;
 	-webkit-transition: all 0.5s linear;
+
 	
+}
+
+.ham2::before, .ham2::after{
+	position: absolute;
+	content: "";
+	display: block;
+	left: 0;
+
+}
+.ham2::after{
+	top: -8px;
+}
+.ham2::before{
+	top:8px;
+}
+
+.transX > .ham2::after{
+	top: 0 !important;
+	transform: rotate(45deg); 
+}
+.transX > .ham2::before{
+	top: 0 !important;
+	transform: rotate(-45deg); 
+}
+
+
+.transX > .ham2{
+	background-color: transparent; 
 }
 
 .welcome_div{

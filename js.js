@@ -2,7 +2,7 @@ $(document).ready(function(){
 // when clicking on nav button nav-menu pops out
   $('#hamburger').click(function(e){
   	e.preventDefault();
-  	$(this).toggleClass("trans");
+  	$(this).toggleClass("transX");
   	$('#nav2').slideToggle(500);
   });
 
