@@ -199,10 +199,12 @@ nav{
 }
 .welcome_span1{
 	font-size: 4em;
+	animation: leftSideToCenter 1s linear;
 }
 .welcome_span2{   
 	font-family: 'Dancing Script', cursive;
 	font-size: 3em;
+	animation: rightSideToCenter 1s linear;
 } 
 .w_container .welcome_span1{
 	margin-right: 0;
@@ -314,6 +316,50 @@ footer{
 		filter(alpha = 100%);
 	}
 }
+
+@keyframes leftSideToCenter{
+     0%{
+     	opacity: 0;
+     	transform: translateX(-80px);
+     } 
+    
+    80%{
+    	opacity: 1;
+        transform: translateX(18px);
+    }  
+
+     
+     100% {
+     	opacity: 1;
+     	transform: translateX(0);
+     }
+
+}
+
+@keyframes rightSideToCenter{
+     0%{
+     	opacity: 0;
+     	transform: translateX(80px);
+     } 
+    
+    80%{
+    	opacity: 1;
+        transform: translateX(-20px);
+    }  
+
+     
+     100% {
+     	opacity: 1;
+     	transform: translateX(0);
+     }
+
+}
+
+
+
+
+
+
 @media only screen and (max-width: 768px){
     .welcome_div{
     	height: 600px;
